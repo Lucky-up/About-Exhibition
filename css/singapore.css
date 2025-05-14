@@ -1,0 +1,240 @@
+/* 图片区域 */
+.img{
+	width: 100%;
+	position: relative;
+	height: auto;
+}
+.img img {
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: center;
+}
+.img .t{
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 10%;
+	text-align: center;
+}
+.img h1 {
+	font-size: 34px;
+}
+
+.img p {
+	font-size: 18px;
+}
+
+/* 介绍区域 */
+.introduce {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.introduce h2 {
+	margin: 20px auto;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+}
+
+.introduce ul {
+	padding: 30px auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.introduce ul li {
+	width: 12.5rem;
+	list-style: none;
+	text-align: center;
+	margin: 0.625rem;
+}
+
+.introduce ul li img {
+	width: 100%;
+	height: 200px;
+}
+
+/* 服务区域 */
+.service {
+	width: 100%;
+	max-width: 75rem;
+	margin: auto;
+}
+
+.service h2 {
+	margin: 1.25rem auto;
+	text-align: center;
+	font-size: 32px;
+	color: #333;
+}
+
+.service .one, .service .two {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 1.875rem;
+}
+
+.service .one .left, .service .two .right {
+	padding: 0.625rem;
+	width: 100%;
+}
+
+.service .one .left h3, .service .two .right h3 {
+	font-size: 26px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.service .one .left p, .service .two .right p {
+	font-size:  18px;
+	color: #666;
+	margin-top: 0.625rem;
+}
+
+.service .one .left button, .service .two .right button {
+	margin-top: 1.25rem;
+	display: block;
+	width: 12.5rem;
+	height: 3.125rem;
+	background-color: brown;
+	border-radius: 1.25rem;
+	border: none;
+	cursor: pointer;
+}
+
+.service .one .left button a, .service .two .right button a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.service .one .right, .service .two .left {
+	width: 100%;
+}
+
+.service .one .right img, .service .two .left img {
+	width: 100%;
+}
+
+/* 应用场景 */
+.apply {
+	width: 100%;
+	max-width: 75rem;
+	margin: auto;
+}
+
+.apply h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	color: #333;
+}
+
+.apply .pic {
+	padding-top: 1.875rem;
+	width: 100%;
+	max-width: 75rem;
+	margin: auto;
+}
+
+.apply .pic ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.apply ul li {
+	position: relative;
+	width: 100%;
+	list-style: none;
+	margin-bottom: 0.625rem;
+}
+
+.apply ul li img {
+	width: 100%;
+	height: 18.75rem;
+}
+
+.apply ul li p {
+	font-size: 1.875rem;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* 咨询区域 */
+.consulation {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	height: 15rem;
+	text-align: center;
+	background: url('../images/china/背景图.jpg') no-repeat center/cover;
+}
+
+.consulation h2 {
+	font-size: 2.5rem;
+	color: #fff;
+	padding-top: 1.25rem;
+}
+
+.consulation p {
+	font-size: 1.375rem;
+	color: #fff;
+	padding-bottom: 1.25rem;
+}
+
+.consulation button {
+	display: block;
+	background-color: #fff;
+	width: 12.5rem;
+	margin: auto;
+	height: 2.5rem;
+	align-items: center;
+	border-radius: 0.9375rem;
+	border: none;
+	cursor: pointer;
+}
+
+.consulation button a {
+	text-decoration: none;
+	color: #333;
+	font-size: 0.875rem;
+}
+
+/* 768px 响应式 */
+@media (max-width: 48rem) {
+	.service .one, .service .two {
+			flex-direction: column;
+	}
+	.service .one .left, .service .two .right {
+		width: 100%;
+	}
+	.service .one .right, .service .two .left {
+			width: 100%;
+	}
+	.service .two .right {
+			padding-left: 5%;
+	}
+	.apply ul li {
+			width: 100%;
+	}
+}
+
+/* 1024px 响应式 */
+@media (min-width: 64rem) {
+	.apply ul li {
+			width: 33.33%;
+	}
+}

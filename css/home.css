@@ -1,0 +1,325 @@
+/* 第一部分响应式 */
+.one {
+	width: 100%;
+	margin: auto;
+	max-width: 1200px;
+	padding: 0 20px;
+}
+
+.one .content ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.one .content ul li {
+	list-style: none;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.one .content ul li img {
+	width: 100%;
+	height: auto;
+	padding-right: 0;
+	margin-bottom: 15px;
+}
+
+.one .content ul li div {
+	width: 100%;
+}
+
+.one .content ul li div h3 {
+	font-size: 1.25rem;
+	color: #b8242b;
+	margin-bottom: 10px;
+}
+
+.one .content ul li div p {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+/* 第二部分响应式 */
+.two {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.two .content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.two .content .left {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.two .content .left ul li {
+	list-style: none;
+	display: flex;
+	margin-bottom: 16px;
+	align-items: flex-start;
+}
+
+.two .content .left ul li img {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	flex-shrink: 0;
+}
+
+.two .content .left ul li h3 {
+	font-size: 1.2rem;
+	color: #b8242b;
+	margin-bottom: 5px;
+}
+
+.two .content .left ul li p {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.two .content .right {
+	width: 100%;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.two .content .right a {
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #b8242b;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.two .content .right video {
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+}
+
+/* 第三部分响应式 */
+.three {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.three .content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.three .content .left {
+	width: 100%;
+	margin: 20px;
+}
+
+.three .content .left img {
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+.three .content .right {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.three .content .right ul li {
+	display: flex;
+	margin: 20px 0;
+	align-items: flex-start;
+}
+
+.three .content .right ul li img {
+	width: 40px;
+	height: 40px;
+	margin-right: 14px;
+	flex-shrink: 0;
+}
+
+.three .content .right ul li h3 {
+	font-size: 1.2rem;
+	color: #b8242b;
+	margin-bottom: 5px;
+}
+
+.three .content .right ul li p {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+/* 数据统计部分响应式 */
+.pic {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 30px;
+	padding: 0 20px;
+}
+
+.pic h4 {
+	text-align: center;
+	font-size: 1.8rem;
+	color: #323232;
+	margin-bottom: 20px;
+}
+
+.pic .count {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.pic .count li {
+	text-align: center;
+	list-style: none;
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.pic .count li p:nth-child(1) {
+	font-size: 1.5rem;
+	color: #d52a32;
+	margin-bottom: 5px;
+}
+
+.pic .count li span {
+	font-size: 0.8rem;
+}
+
+.pic .count li p:nth-child(2) {
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.pic .logo {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.pic .logo li {
+	list-style: none;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
+
+.pic .logo li img {
+	width: 100%;
+	height: auto;
+	max-height: 150px;
+	object-fit: contain;
+}
+
+
+/* 媒体查询 - 平板尺寸 (768px及以上) */
+@media (min-width: 768px) {
+	.one .content ul li {
+			width: 48%;
+			flex-direction: row;
+	}
+	
+	.one .content ul li img {
+			width: 40%;
+			padding-right: 5%;
+	}
+	
+	.one .content ul li div {
+			width: 55%;
+	}
+	
+	.two .content {
+			flex-direction: row;
+	}
+	
+	.two .content .left {
+			width: 50%;
+	}
+	
+	.two .content .right {
+			width: 50%;
+	}
+	
+	.three .content {
+			flex-direction: row;
+	}
+	
+	.three .content .left {
+			width: 50%;
+	}
+	
+	.three .content .right {
+			width: 50%;
+	}
+	
+	.pic .count li {
+			width: 25%;
+	}
+	
+	.pic .logo li {
+			width: 25%;
+	}
+}
+
+/* 媒体查询 - 桌面尺寸 (1024px及以上) */
+@media (min-width: 1024px) {
+	
+	
+	.one .content ul li div h3 {
+			font-size: 1.5rem;
+	}
+	
+	.one .content ul li div p {
+			font-size: 1rem;
+	}
+	
+	.two .content .left ul li h3 {
+			font-size: 1.3rem;
+	}
+	
+	.two .content .left ul li p {
+			font-size: 1rem;
+	}
+	
+	.three .content .right ul li h3 {
+			font-size: 1.3rem;
+	}
+	
+	.three .content .right ul li p {
+			font-size: 1rem;
+	}
+	
+	.pic h4 {
+			font-size: 2.2rem;
+	}
+	
+	.pic .count li p:nth-child(1) {
+			font-size: 1.8rem;
+	}
+	
+	.pic .count li p:nth-child(2) {
+			font-size: 1rem;
+	}
+	
+
+}

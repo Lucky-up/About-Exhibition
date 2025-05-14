@@ -1,0 +1,98 @@
+/* 新闻列表区域 - 移动优先(默认每行一个) */
+.now {
+	width: 100%;
+	max-width: 75rem;
+	margin: auto;
+	padding: 0 1rem;
+}
+
+.now h2 {
+	font-size: 2.5rem;
+	color: #333;
+	text-align: center;
+	margin: 1.25rem 0;
+}
+
+.now ul {
+	padding: 1.25rem 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1.5625rem;
+}
+
+.now ul li {
+	border: 0.0625rem solid #c6c4c4;
+	border-radius: 0.3125rem;
+	box-shadow: #dfdcdc 0 0 0.3125rem 0.3125rem;
+	list-style: none;
+	width: 100%;
+	margin: 0.875rem 0;
+}
+
+.now ul li a {
+	width: 100%;
+	text-decoration: none;
+	display: block;
+}
+
+.now ul li a img {
+	width: 100%;
+	height: auto;
+	max-height: 12.8125rem;
+}
+
+.now ul li a h6 {
+	padding: 0.625rem;
+	color: #333;
+	font-size: 1rem;
+}
+
+.now ul li a p {
+	color: #c6c4c4;
+	font-size: 0.875rem;
+	padding: 0 0.625rem 0.625rem;
+}
+
+.now button {
+	position: relative;
+	left: auto;
+	transform: none;
+	display: block;
+	margin: 1.875rem auto;
+	width: 10rem;
+	height: 3.125rem;
+	line-height: 3.125rem;
+	color: #fff;
+	background-color: brown;
+	border-radius: 1.5625rem;
+	border: none;
+	cursor: pointer;
+}
+
+/* 768px及以上 - 每行3个 */
+@media (min-width: 48rem) {
+	.now ul li {
+			width: 31%;
+			margin: 0.875rem 1.1%;
+	}
+	
+	.now ul li a img {
+			height: 12.8125rem;
+	}
+}
+
+/* 1024px及以上调整 */
+@media (min-width: 64rem) {
+	.now h2 {
+			font-size: 2.5rem;
+	}
+	
+	.now ul li a h6 {
+			font-size: 1.125rem;
+	}
+	
+	.now ul li a p {
+			font-size: 0.9375rem;
+	}
+}
