@@ -2,7 +2,7 @@
 > 预览地址：https://lucky-up.github.io/About-Exhibition/
 
 ## 项目介绍
-纯静态展示页面，原生 HTML/CSS/JS 开发，依托 GitHub Pages 部署，用于展示「2026第一届中国·北京-东南亚芳香博览会」相关介绍。
+纯静态展示页面，原生 HTML/CSS 开发，依托 GitHub Pages 部署，用于展示「2026第一届中国·北京-东南亚芳香博览会」相关介绍。
 
 ## 目录结构
 ```
